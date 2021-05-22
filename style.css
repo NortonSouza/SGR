@@ -1,0 +1,246 @@
+/*--------------------------------------------------------------
+# Nav Section
+--------------------------------------------------------------*/
+
+.title {
+  color: rgba(0, 140, 255, 0.795);
+}
+
+.copy-footer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  /* background-color:#171bffec */
+  background-color: rgba(19, 15, 211, 0.911)
+}
+
+.navbar {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+}
+
+.navbar.header-scrolled, #header.header-inner-pages {
+  background: rgba(21, 34, 43, 0.85);
+  padding: 12px 0;
+}
+
+.write-logo, .nav-link {
+  color: #fff;
+}
+
+/* Get Startet Button */
+
+.get-started-btn {
+  margin-left: 25px;
+  color: rgba(19, 15, 211, 0.911);
+  border-radius: 7px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 2px solid rgba(19, 15, 211, 0.911);
+  background-color: #fff;
+}
+
+.get-started-btn:hover {
+  background: rgba(19, 15, 211, 0.911);
+  color: #fff;
+  border-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .get-started-btn {
+    margin: 0 48px 0 0;
+    padding: 6px 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .get-started-btn {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  /* background: url("../img/hero-bg.jpg") top center; */
+  background: url("/assets/img/background-4.jpg") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(13, 20, 26, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 1, 5rem;
+  font-weight: 600;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+#hero .btn-get-started {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px 35px 10px 35px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1b17ff;
+  border: 2px solid #1b17ff;
+}
+
+#hero .btn-get-started:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Login 
+--------------------------------------------------------------*/
+
+.login-rigth {
+  width: 100%;
+  height: 100vh;
+  /* background: url("../img/hero-bg.jpg") top center; */
+  background: url("/assets/img/background-1.jpg") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+.title-login {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 5%;
+}
+
+.sgr-login {
+  margin-top: 5%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: xx-large;
+}
+
+.facebook {
+  background-color: #3b5998;
+  color: #fff;
+  margin-bottom: 1%;
+}
+
+.twitter {
+  background-color: #0d95e8;
+  color: #fff;
+  margin-bottom: 1%;
+}
+
+.google {
+  background-color: #ea4335;
+  color: #fff;
+}
+
+.back-index {
+  color: blue;
+  padding-top: 1%;
+}
+
+/*--------------------------------------------------------------
+# Login 
+--------------------------------------------------------------*/
+
+.menu {
+  background: #0d95e8;
+  height: 100vh;
+  /* width: 240px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  outline: none;
+}
+
+.avatar {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2em 0.5em;
+  text-align: center;
+}
+
+h2 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+li {
+  
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 0.95em;
+  font-weight: regular;
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  background-size: auto 20px;
+  transition: all 0.15s linear;
+  cursor: pointer;
+}
