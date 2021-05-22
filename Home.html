@@ -37,17 +37,17 @@
 						<br>
 						<div class="">
 							<span>Nome</span>
-							<input type="text" class="form-control">
+							<input type="text" class="form-control" id="nomeReuniao">
 							<span>Data</span>
-							<input type="text" class="form-control">
+							<input type="text" class="form-control" id="dataReuniao">
 							<span>Hora</span>
-							<input type="text" class="form-control">
+							<input type="text" class="form-control" id="horaReuniao">
 							<span>Sala</span>
-							<input type="text" class="form-control">
+							<input type="text" class="form-control" id="salaReuniao">
 							<span>Equipamentos</span>
-							<input type="text" class="form-control">
+							<input type="text" class="form-control" id="equipamentoReuniao">
 							<br>
-							<button class="btn btn-primary">Salvar</button>
+							<button class="btn btn-primary" onclick="SalvarReuniao()">Salvar</button>
 						</div>
 					</div>
 				</div>
@@ -59,13 +59,13 @@
 						<br>
 						<div class="">
 							<span>Nome</span>
-							<input type="text" class="form-control">
+							<input type="text" class="form-control" id="nomeSala">
 							<span>Tipo</span>
-							<input type="text" class="form-control">
+							<input type="text" class="form-control" id="tipoSala">
 							<span>Endereço</span>
-							<input type="text" class="form-control">
+							<input type="text" class="form-control" id="enderecoSala">
 							<br>
-							<button class="btn btn-primary">Salvar</button>
+							<button class="btn btn-primary"  onclick="SalvarSala()" >Salvar</button>
 						</div>
 					</div>
 				</div>
@@ -76,13 +76,13 @@
 					<br>
 					<div class="">
 						<span>Nome</span>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="nomeEquipamento">
 						<span>Tipo</span>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="tipoEquipamento">
 						<span>Descrição</span>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="descricaoEquipamento">
 						<br>
-						<button class="btn btn-primary">Salvar</button>
+						<button class="btn btn-primary" onclick="SalvarEquipamento()">Salvar</button>
 					</div>
 				</div>
 			</div>
@@ -99,6 +99,7 @@
 		</script>
 	<script src="js/main.js"></script>
     <script src="/js/app/login.js"></script>
+    <script src="../SGR/js/app/home.js"></script>
 </body>
 
 </html>
