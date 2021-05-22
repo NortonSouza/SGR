@@ -1,11 +1,4 @@
-function SalvarReuniao(){
-    alert('to aqui1');
-};
-
-function SalvarSala(){
-    alert('to aqui2');
-};
-
-function SalvarEquipamento(){
-    alert('to aqui3');
-};
+var url_Api = "https://image.tmdb.org/t/p/w200/";
+var rota_sala = "api/sala/";
+var rota_equipamento = "api/equipamento/";
+var rota_reuniao = "api/reuniao/";
