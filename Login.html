@@ -68,18 +68,70 @@
         </div>
     </section>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
         </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script> -->
+        </script>
         <!-- <script src="../SGR/js/app/login.js"></script> -->
     <script src="js/main.js"></script>
-    <script src="js/app/login.js"></script>
+    <script src="js/app/login.js" crossorigin="anonymous"></script>
+    <script src="js/app/home.js" crossorigin="anonymous"></script>
+
+    <!-- <script>
+		function login() {
+			var senha = document.getElementById("password").value;
+			var usuario = document.getElementById("username").value;
+			
+            $.ajax({
+                type: "POST",
+                url: "https://localhost:44378/api/Usuario/CreateSessao",
+                data: {"login": senha, "senha": usuario},
+                success: alert("Deu"),
+                contentType: "application/json",
+                dataType: 'json',
+                    success: function(result){
+                                console.log(result);
+                    }
+            });
+
+            request.setRequestHeader('Access-Control-Allow-Origin', '*');
+            request.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+            request.setRequestHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
+
+			// var xmlhttp; 
+			// // var api_key = "9c2c75d9d67c3f98cc98bb29450115c5";
+			// var url_api = "http://localhost:50606/api/CreateSessao";
+
+			// xmlhttp = new XMLHttpRequest();
+			// xmlhttp.open("POST", url_api, true);
+
+			// xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+			// xmlhttp.send(JSON.stringify());
+
+			// xmlhttp.onreadystatechange = function() { // Chama a função quando o estado mudar.
+			// 	if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+			// 		// Requisição finalizada. Faça o processamento aqui.
+			// 	}
+			// }
+
+			//alterar para chamada api
+			var usuarioSenhaValidos = usuario === "joao" && senha === "joao";
+
+			if(usuarioSenhaValidos == true){
+				window.location.href = "Home.html";
+			}
+			else{
+				alert("Usuario/Senha invalidos")
+			}
+		};
+	</script> -->
+
+    
 </body>
 
 </html>
