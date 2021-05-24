@@ -1,25 +1,29 @@
-var url_Api = "https://image.tmdb.org/t/p/w200/";
+var url_Api = "https://localhost:44378/";
 var rota_sala = "api/sala/";
 var rota_equipamento = "api/equipamento/";
 var rota_reuniao = "api/reuniao/";
-var idsessao = "";
+var rota_autenticacao = "api/Usuario/CreateSessao";
+var rota_sessao = "api/Sessao/";
+var rota_usuario = "api/Usuario/";
+var loginPage = "login.html";
 
 function ValidaSessao() {    
-    idsessao = sessionStorage.getItem("key");
+    var url_get = url_Api + rota_sessao;
+    var idsessao = sessionStorage.getItem("key");
     if (idsessao == "")
-        window.location.href = "login.html";
+        window.location.href = loginPage;
     else
     {
         var request = new XMLHttpRequest();
 
-        request.open('GET', 'https://localhost:44378/api/Sessao/' + idsessao, true);
+        request.open('GET', url_get + idsessao, true);
 
         request.setRequestHeader('Content-Type', 'application/json');        
         
         request.onreadystatechange = function () {
             if (this.readyState === 4) {                
                 if(request.status !== 200){                    
-                    window.location.href = "login.html"; 
+                    window.location.href = loginPage; 
                 }
             }
         };

@@ -1,10 +1,11 @@
 function login() {
+    var url_post = url_Api + rota_autenticacao;
     var senha = document.getElementById("password").value;
     var usuario = document.getElementById("username").value;
     
     var request = new XMLHttpRequest();
 
-    request.open('POST', 'https://localhost:44378/api/Usuario/CreateSessao', true);
+    request.open('POST', url_post, true);
 
     request.setRequestHeader('Content-Type', 'application/json');        
     
@@ -23,4 +24,4 @@ function login() {
     };
     
     request.send(JSON.stringify({"login": usuario, "senha": senha}));
-  };
+};
