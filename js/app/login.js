@@ -9,7 +9,7 @@ function login() {
 
     request.setRequestHeader('Content-Type', 'application/json');        
     
-    request.onreadystatechange = function () {
+    request.onreadystatechange = function () {        
         if (this.readyState === 4) {
             if(request.status === 200){                
                 var obj = JSON.parse(this.responseText)                
@@ -17,11 +17,13 @@ function login() {
                 window.location.href = "Home.html";
             }else{
                 console.log("Erro");
-                console.log(request);
+                console.log(url_post);
+                console.log({"login": usuario, "senha": senha});
+                console.log(request);                
                 alert("Usuario/Senha invalidos")
             }
         }
     };
     
-    request.send(JSON.stringify({"login": usuario, "senha": senha}));
+    request.send(JSON.stringify({login: usuario, senha: senha}));
 };
